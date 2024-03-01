@@ -32,9 +32,11 @@ int main(int argc, char **argv) {
     add_to_back(&head_2, 18);
     int expected_values_2[] = {15, 12, 18};
     Node *curr_2 = head_2;
-    for (int i = 0; i < 3; ++i) {
+    int i = 0;
+    while (curr_2 != NULL && i < 3) {
         assert(curr_2->data == expected_values_2[i]);
         curr_2 = curr_2->next;
+	++i;
     }
     free_list(head_2);
 
