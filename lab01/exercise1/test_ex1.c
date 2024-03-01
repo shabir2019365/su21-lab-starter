@@ -15,6 +15,12 @@ int main(int argc, char **argv) {
     assert(num_z == 0);
 
     /* TODO: Think of a scenario that is not tested by the current test cases. Create one additional test case to test this scenario. */
+    
+    char *empty_str = "";  // create an empty string 
+    int num_e = num_occurrences(empty_str, 'e'); //pass any charactor to check. It could be anything
+    assert(num_e == 0);
+
+    printf("Additional test case passed!\n");    
 
     printf("Congrats! If you have made it to this line, your Part 1 Test cases are all passing!\n");
 
