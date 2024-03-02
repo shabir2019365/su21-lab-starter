@@ -1,3 +1,4 @@
+// Muhammad Shabir Khan - pwd_checker.c - 1st March 2024
 #include <string.h>
 #include "pwd_checker.h"
 
